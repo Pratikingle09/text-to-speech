@@ -27,9 +27,9 @@ p{
 .container {
     width: 300px;
     height: 300px;
-    margin-left: 40px;
+    margin-left: 30px;
     position: absolute;
-    top: 380px;
+    top: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
