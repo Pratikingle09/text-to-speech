@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Text to speech</title>
-</head>
-<body>
-    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
-    <h1>
-        Text to speech converter 
-    </h1>
-    <textarea id="txt" name="text"></textarea>
-    <br>
-    <p>*Takes few second to process. Have patience</p>
-    <div class="container">
-        <div class="center">
-          <button class="btn" onclick="textSpeak()">
-            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-            </svg>
-            <span>Submit</span>
-          </button>
-        </div>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://code.responsivevoice.org/responsivevoice.js"
+    ></script>
+    <div class="main">
+      <div>
+        <h1>Text to speech converter</h1>
       </div>
+      <div>
+        <textarea id="txt" name="text"></textarea>
+      </div>
+
+      <p>*Takes few second to process. Have patience</p>
+      
+        <div class="container">
+          <div class="center">
+            <button class="btn" onclick="textSpeak()">
+              <svg
+                width="180px"
+                height="60px"
+                viewBox="0 0 180 60"
+                class="border"
+              >
+                <polyline
+                  points="179,1 179,59 1,59 1,1 179,1"
+                  class="bg-line"
+                />
+                <polyline
+                  points="179,1 179,59 1,59 1,1 179,1"
+                  class="hl-line"
+                />
+              </svg>
+              <span>Submit</span>
+            </button>
+          </div>
+        </div>
+      
+    </div>
     <script>
-        function textSpeak(){
-            var text = document.getElementById("txt").value;
-            responsiveVoice.speak(text);
-        }
+      function textSpeak() {
+        var text = document.getElementById("txt").value;
+        responsiveVoice.speak(text);
+      }
     </script>
-</body>
+  </body>
 </html>
